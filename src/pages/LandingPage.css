@@ -1,0 +1,252 @@
+/* src/pages/LandingPage.css */
+
+.landing-page {
+    font-family: 'Playfair Display', serif;
+    color: #4a3a4a;
+    text-align: center;
+    background: #fdf7fa;
+    padding: 0;
+    margin: 0;
+}
+
+/* Centering the entire content */
+.hero-section,
+.about-us-section,
+.ai-visuals-section,
+.registration-section,
+.services-section,
+.faq-section,
+.how-to-start-section,
+.partners-section,
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+/* Logo styling */
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 90px;
+    height: auto;
+    z-index: 10;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://via.placeholder.com/1500');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    font-family: 'Lora', serif;
+    margin-bottom: 2rem;
+}
+
+/* CTA Buttons */
+.cta-buttons button {
+    background-color: #e8a7c5;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    font-family: 'Lora', serif;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.cta-buttons button:hover {
+    background-color: #d98fb4;
+    transform: scale(1.05);
+}
+
+/* Sections Headings */
+.about-us-section h2,
+.ai-visuals-section h2,
+.registration-section h2,
+.services-section h2,
+.faq-section h2,
+.how-to-start-section h2,
+.partners-section h2,
+.login-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #b57d9a;
+    margin-bottom: 1.5rem;
+}
+
+/* AI Visuals */
+.ai-visuals {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.ai-visuals img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(181, 125, 154, 0.3);
+}
+
+/* Cards and Registration Options */
+.registration-options,
+.services-grid,
+.steps-grid,
+.partners-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.registration-card,
+.service-card,
+.step-card,
+.partner-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(181, 125, 154, 0.2);
+    transition: all 0.3s ease;
+}
+
+.registration-card:hover,
+.service-card:hover,
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(181, 125, 154, 0.3);
+}
+
+.registration-card h3,
+.service-card h3,
+.step-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #a66b87;
+}
+
+.registration-card p,
+.service-card p,
+.step-card p {
+    font-family: 'Lora', serif;
+    color: #5c4a5c;
+    font-size: 1.1rem;
+}
+
+/* Partner Logos */
+.partner-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* FAQ Section */
+.faq-item {
+    width: 70%;
+    margin-bottom: 1rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(181, 125, 154, 0.2);
+}
+
+.faq-item h3 {
+    color: #a66b87;
+}
+
+/* Login Section */
+.login-section {
+    padding: 3rem;
+    background: #f5e6ec;
+    border-radius: 15px;
+    width: 60%;
+}
+
+/* Footer */
+.footer {
+    background: #b57d9a;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-family: 'Lora', serif;
+}
+
+.footer p {
+    margin: 0.6rem 0;
+    font-size: 1rem;
+}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .registration-card,
+    .service-card,
+    .step-card {
+        width: 100%;
+    }
+}
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Logo Section */
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: transparent; /* Optional: Change background if needed */
+}
+
+.site-logo {
+    width: 150px;  /* Adjust size as needed */
+    height: auto;
+    object-fit: contain;
+}
